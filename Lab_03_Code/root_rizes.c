@@ -31,7 +31,7 @@ if (diakrinousa>0)
     printf("The trinomial equation has two solutions, x1= %.3f, x2= %.3f\n",(-b+sqrt(diakrinousa))/(a*2), (-b-sqrt(diakrinousa))/(a*2));
 else 
     if (diakrinousa==0) 
-        printf("The trinomial equation has one solution, x1= %.3f\n",b/(a*2));
+        printf("The trinomial equation has one solution, x1= %.3f\n",-b/(a*2));
     else 
         printf("The trinomial equation has two complex solutions, x1= (%.3f) + (%.3fi), x2= (%.3f) + (%3fi) \n",(-b/a*2),(sqrt(-diakrinousa))/(a*2), 
                                                                                                     (-b/a*2),(-sqrt(-diakrinousa))/(a*2));
