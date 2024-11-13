@@ -15,11 +15,8 @@ scanf("%d", &step);
 
 
 for (int i=1;i<=lines;i++) {
-    if (i==1) 
+    for (int j=1;j<=(i-1)*step+1;j++)
         putchar('*');
-    else
-        for (int j=1;j<=i*step-1;j++)
-            putchar('*');
     // printf("%d", i);
     putchar(10);    //EOL=new line
 }
