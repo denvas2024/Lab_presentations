@@ -1,14 +1,14 @@
-/* File: capitalize.c */
+/* File: lowercase.c */
 #include <stdio.h>
 
 int main()
-{ int ch; /* Be careful! Declare ch as int because of getchar() and EOF */
-  ch = getchar();                               /* Read first character */
-  while (ch != EOF) {           /* Go on if we didn't reach end of file */
-    if (ch >= 'A' && ch <= 'Z')                 /* If lower case letter */
-      ch = ch + ('a'-'A'); /* Move 'a'-'A' positions in the ASCII table */
-    putchar(ch);                                 /* Print out character */
-    ch = getchar();                              /* Read next character */
+{ int ch; 
+  ch = getchar();                          
+  while (ch != EOF) {        
+    if (ch >= 'A' && ch <= 'Z') //Find Uppercase Letter characters  
+      ch = ch + ('a'-'A'); 		//+ (instead of - in capitlize.c)
+    putchar(ch);                                
+    ch = getchar();                              
   }
   return 0;
 }
